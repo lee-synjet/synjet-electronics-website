@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: 'SynJet Electronics is a leading manufacturer of high-precision electromagnetic sensors for industrial automation, automotive, and IoT applications.',
   keywords: 'electromagnetic sensors, proximity sensors, flow sensors, industrial sensors, SynJet',
   icons: {
-    icon: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_8a34983f-9fab-491f-98c7-b7c0fddc2c54.jpeg?sign=1804947703-f1dfb348e0-0-f68fa31e47e47273979819f627340cd6b7febdcb7dbde75f7288933fe61f084a',
+    icon: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_6a61ae2f-1062-4e16-a957-4f61f1abcbd8.jpeg?sign=1804948393-ba1e281d34-0-da1ab1c2c78b0523bc74a40fa78bf7f12f615613c04358b57e98ada495888459',
     apple: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_f079123b-ae9e-4e9e-8c29-d1aeb092480f.jpeg?sign=1804947701-e16e4ff24d-0-f70fe0d3bbf1e4d5fccf6cbb662feef5bc5096241236a9b7fd2bd71496960226',
   },
 };
@@ -84,13 +84,13 @@ export default function Home() {
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex items-center space-x-3">
               <Image
-                src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_781e7e2a-f14e-4d42-923d-ec697587fd72.jpeg?sign=1804947676-c391eeaf09-0-c3c7c5312f3a0c0ec35467fef2d5f248ee42a3b3116c91790adf80f50004a5b8"
+                src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_6a61ae2f-1062-4e16-a957-4f61f1abcbd8.jpeg?sign=1804948393-ba1e281d34-0-da1ab1c2c78b0523bc74a40fa78bf7f12f615613c04358b57e98ada495888459"
                 alt="SynJet Logo"
                 width={40}
                 height={40}
                 className="h-10 w-10"
               />
-              <span className="text-xl font-bold">SynJet</span>
+              <span className="text-xl font-bold text-blue-600">SynJet</span>
             </div>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
@@ -278,15 +278,15 @@ export default function Home() {
               <CardContent className="p-6 text-center">
                 <div className="mb-4 h-32 flex items-center justify-center">
                   <Image
-                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_aaf76339-28e1-4ac5-a843-e32995843365.jpeg?sign=1804947676-e1ebf8e1e6-0-e3e40092e17d030d50f12dc86ab8b07509f15aba33599731278375bb498a3e2f"
-                    alt="SynJet Logo Style 1"
+                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_6a61ae2f-1062-4e16-a957-4f61f1abcbd8.jpeg?sign=1804948393-ba1e281d34-0-da1ab1c2c78b0523bc74a40fa78bf7f12f615613c04358b57e98ada495888459"
+                    alt="SynJet Primary Logo"
                     width={120}
                     height={120}
                     className="object-contain"
                   />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">Modern Minimalist</h3>
-                <p className="text-sm text-muted-foreground">Clean geometric design with electromagnetic wave symbol</p>
+                <h3 className="font-semibold text-lg mb-2">Primary Logo</h3>
+                <p className="text-sm text-muted-foreground">Blue S with electromagnetic coil design</p>
               </CardContent>
             </Card>
             <Card className="overflow-hidden">
@@ -434,13 +434,13 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_781e7e2a-f14e-4d42-923d-ec697587fd72.jpeg?sign=1804947676-c391eeaf09-0-c3c7c5312f3a0c0ec35467fef2d5f248ee42a3b3116c91790adf80f50004a5b8"
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_6a61ae2f-1062-4e16-a957-4f61f1abcbd8.jpeg?sign=1804948393-ba1e281d34-0-da1ab1c2c78b0523bc74a40fa78bf7f12f615613c04358b57e98ada495888459"
                   alt="SynJet Logo"
                   width={32}
                   height={32}
                   className="h-8 w-8"
                 />
-                <span className="text-xl font-bold">SynJet</span>
+                <span className="text-xl font-bold text-blue-600">SynJet</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Leading manufacturer of electromagnetic sensors for industrial applications worldwide.
