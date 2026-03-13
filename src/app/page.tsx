@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: 'SynJet Electronics - Advanced Electromagnetic Sensors',
   description: 'SynJet Electronics is a leading manufacturer of high-precision electromagnetic sensors for industrial automation, automotive, and IoT applications.',
   keywords: 'electromagnetic sensors, proximity sensors, flow sensors, industrial sensors, SynJet',
+  icons: {
+    icon: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_8a34983f-9fab-491f-98c7-b7c0fddc2c54.jpeg?sign=1804947703-f1dfb348e0-0-f68fa31e47e47273979819f627340cd6b7febdcb7dbde75f7288933fe61f084a',
+    apple: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_f079123b-ae9e-4e9e-8c29-d1aeb092480f.jpeg?sign=1804947701-e16e4ff24d-0-f70fe0d3bbf1e4d5fccf6cbb662feef5bc5096241236a9b7fd2bd71496960226',
+  },
 };
 
 const products = [
@@ -78,10 +82,14 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded bg-blue-600 flex items-center justify-center">
-                <Zap className="h-5 w-5 text-white" />
-              </div>
+            <div className="flex items-center space-x-3">
+              <Image
+                src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_781e7e2a-f14e-4d42-923d-ec697587fd72.jpeg?sign=1804947676-c391eeaf09-0-c3c7c5312f3a0c0ec35467fef2d5f248ee42a3b3116c91790adf80f50004a5b8"
+                alt="SynJet Logo"
+                width={40}
+                height={40}
+                className="h-10 w-10"
+              />
               <span className="text-xl font-bold">SynJet</span>
             </div>
           </Link>
@@ -256,6 +264,80 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Brand Identity Section */}
+      <section className="py-20 bg-slate-50 dark:bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Brand Identity</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              SynJet brand represents innovation, precision, and reliability in electromagnetic sensor technology
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 text-center">
+                <div className="mb-4 h-32 flex items-center justify-center">
+                  <Image
+                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_aaf76339-28e1-4ac5-a843-e32995843365.jpeg?sign=1804947676-e1ebf8e1e6-0-e3e40092e17d030d50f12dc86ab8b07509f15aba33599731278375bb498a3e2f"
+                    alt="SynJet Logo Style 1"
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Modern Minimalist</h3>
+                <p className="text-sm text-muted-foreground">Clean geometric design with electromagnetic wave symbol</p>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 text-center">
+                <div className="mb-4 h-32 flex items-center justify-center">
+                  <Image
+                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_74113d01-5272-48a3-9d33-712a62776867.jpeg?sign=1804947677-1508162838-0-c66cf2117458e8cbbe924304d184ad12c25b08c82064ea1be13293ccc802258c"
+                    alt="SynJet Logo Style 2"
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Tech Innovation</h3>
+                <p className="text-sm text-muted-foreground">Circuit pattern integrated with letter S and J</p>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 text-center">
+                <div className="mb-4 h-32 flex items-center justify-center">
+                  <Image
+                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_e877ada7-0a93-4ad7-bba7-c58f60a7e748.jpeg?sign=1804947678-ae7635a2aa-0-5593eef26905bfd84b49470d3c7805c442b82b46a4252f7565f4826807ef0144"
+                    alt="SynJet Logo Style 3"
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Premium Brand</h3>
+                <p className="text-sm text-muted-foreground">Metallic blue finish with high-tech aesthetic</p>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 text-center">
+                <div className="mb-4 h-32 flex items-center justify-center">
+                  <Image
+                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_f079123b-ae9e-4e9e-8c29-d1aeb092480f.jpeg?sign=1804947701-e16e4ff24d-0-f70fe0d3bbf1e4d5fccf6cbb662feef5bc5096241236a9b7fd2bd71496960226"
+                    alt="SynJet App Icon"
+                    width={120}
+                    height={120}
+                    className="object-contain rounded-2xl"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">App Icon</h3>
+                <p className="text-sm text-muted-foreground">Modern iOS style icon with gradient background</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
@@ -350,10 +432,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded bg-blue-600 flex items-center justify-center">
-                  <Zap className="h-5 w-5 text-white" />
-                </div>
+              <div className="flex items-center space-x-3 mb-4">
+                <Image
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_781e7e2a-f14e-4d42-923d-ec697587fd72.jpeg?sign=1804947676-c391eeaf09-0-c3c7c5312f3a0c0ec35467fef2d5f248ee42a3b3116c91790adf80f50004a5b8"
+                  alt="SynJet Logo"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8"
+                />
                 <span className="text-xl font-bold">SynJet</span>
               </div>
               <p className="text-sm text-muted-foreground">
