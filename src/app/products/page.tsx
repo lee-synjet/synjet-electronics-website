@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Mail, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Products - SynJet Electronics',
@@ -16,10 +16,12 @@ const productCategories = [
     id: 'hall-switches',
     name: 'Hall Switch Position Sensors',
     description: 'High-precision Hall effect switches for position detection in automotive, industrial, and consumer applications.',
+    image: 'https://aka.doubaocdn.com/s/02qu1w3qQb',
     products: [
       {
         name: 'MT83XX High-Voltage Series',
         description: 'AEC-Q100 certified Hall switches with wide voltage range (3.8V-60V) and 200KHz sampling frequency.',
+        image: 'https://aka.doubaocdn.com/s/28sP1w3qQb',
         specs: [
           'Operating Voltage: 3.8V - 60V',
           'Sampling Frequency: 200KHz',
@@ -32,6 +34,7 @@ const productCategories = [
       {
         name: 'MT81XX Low-Voltage High-Speed Series',
         description: 'High-speed Hall switches with 400KHz sampling for fast response applications.',
+        image: 'https://aka.doubaocdn.com/s/p6GU1w3qQb',
         specs: [
           'Operating Voltage: 2.8V - 24V',
           'Sampling Frequency: 400KHz',
@@ -44,6 +47,7 @@ const productCategories = [
       {
         name: 'MT85XX Low-Power Series',
         description: 'Low-power Hall switches with balanced performance for battery-conscious applications.',
+        image: 'https://aka.doubaocdn.com/s/xmSJ1w3qQb',
         specs: [
           'Operating Voltage: 3.0V - 24V',
           'Sampling Frequency: 25KHz',
@@ -56,6 +60,7 @@ const productCategories = [
       {
         name: 'MT86XX Micro-Power Series',
         description: 'Ultra-low power Hall switches with 1.7µA current consumption for IoT and portable devices.',
+        image: 'https://aka.doubaocdn.com/s/InMi1w3qQb',
         specs: [
           'Operating Voltage: 1.6V - 5.5V',
           'Sampling Frequency: 20Hz',
@@ -71,10 +76,12 @@ const productCategories = [
     id: 'current-sensors',
     name: 'Current Sensor ICs',
     description: 'Integrated current sensors with galvanic isolation for precise current measurement in power systems.',
+    image: 'https://aka.doubaocdn.com/s/pUMu1w3qQS',
     products: [
       {
         name: 'MT9221 / MT9223 Series',
         description: 'Isolated current sensor ICs with 2400Vrms isolation voltage and 150KHz bandwidth.',
+        image: 'https://aka.doubaocdn.com/s/Nb691w3qQS',
         specs: [
           'Measuring Range: ±5A to ±50A',
           'Isolation Voltage: 2400Vrms',
@@ -88,6 +95,7 @@ const productCategories = [
       {
         name: 'MT9222 Series',
         description: 'High-isolation current sensor with 4800Vrms isolation and 10kV surge withstand.',
+        image: 'https://aka.doubaocdn.com/s/zNV81w3qQS',
         specs: [
           'Measuring Range: ±20A to ±100A',
           'Isolation Voltage: 4800Vrms',
@@ -101,6 +109,7 @@ const productCategories = [
       {
         name: 'MT9523 Series',
         description: 'High-speed current sensor with 250KHz bandwidth and 2.2µs response time.',
+        image: 'https://aka.doubaocdn.com/s/zoFU1w3qQS',
         specs: [
           'Measuring Range: ±5A to ±50A',
           'Isolation Voltage: 2500Vrms',
@@ -114,6 +123,7 @@ const productCategories = [
       {
         name: 'MT9522 Series',
         description: 'Advanced current sensor with overcurrent protection and fault detection.',
+        image: 'https://aka.doubaocdn.com/s/ZJxU1w3qQS',
         specs: [
           'Measuring Range: ±20A to ±80A',
           'Isolation Voltage: 4800Vrms',
@@ -127,6 +137,7 @@ const productCategories = [
       {
         name: 'MT9532 Series',
         description: 'Ultra-high-speed current sensor with 1MHz bandwidth for demanding applications.',
+        image: 'https://aka.doubaocdn.com/s/tXc31w3qQS',
         specs: [
           'Measuring Range: ±20A to ±80A',
           'Isolation Voltage: 4800Vrms',
@@ -143,10 +154,12 @@ const productCategories = [
     id: 'magnetoresistive',
     name: 'Magnetoresistive Sensors',
     description: 'High-sensitivity AMR-based sensors for precise angular and position detection.',
+    image: 'https://aka.doubaocdn.com/s/5SIJ1w3qQb',
     products: [
       {
         name: 'MT6325 Series',
         description: 'One-dimensional AMR switch with high sensitivity and low power consumption.',
+        image: 'https://aka.doubaocdn.com/s/5SIJ1w3qQb',
         specs: [
           'Operating Voltage: 1.8V - 5.5V',
           'Sampling Frequency: 900Hz',
@@ -159,6 +172,7 @@ const productCategories = [
       {
         name: 'MT613X Series',
         description: 'Two-dimensional AMR switches for 360° planar magnetic field detection.',
+        image: 'https://aka.doubaocdn.com/s/5SIJ1w3qQb',
         specs: [
           'Operating Voltage: 1.65V - 5.0V',
           'Sampling Frequency: 20Hz - 1KHz',
@@ -199,15 +213,27 @@ export default function ProductsPage() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,transparent,black)] dark:bg-grid-slate-900" />
+        <div className="relative container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Electromagnetic Sensor Solutions
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-8">
               Comprehensive range of high-performance sensors for automotive, industrial, and IoT applications
             </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild>
+                <a href="mailto:autumn@synjet-electronics.com">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Request Quote
+                </a>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="/#contact">Contact Sales</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -235,7 +261,15 @@ export default function ProductsPage() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {category.products.map((product, idx) => (
-                    <Card key={idx} className="overflow-hidden">
+                    <Card key={idx} className="overflow-hidden hover:shadow-lg transition-shadow">
+                      <div className="relative h-48 bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                        <Image
+                          src={product.image}
+                          alt={product.name}
+                          fill
+                          className="object-contain p-4"
+                        />
+                      </div>
                       <CardContent className="p-6">
                         <h3 className="text-xl font-semibold mb-3">{product.name}</h3>
                         <p className="text-muted-foreground mb-4">{product.description}</p>
@@ -266,6 +300,12 @@ export default function ProductsPage() {
                               ))}
                             </div>
                           </div>
+
+                          <Button variant="outline" size="sm" asChild className="w-full mt-4">
+                            <a href="mailto:autumn@synjet-electronics.com?subject=Inquiry: {product.name}">
+                              Request Datasheet
+                            </a>
+                          </Button>
                         </div>
                       </CardContent>
                     </Card>
@@ -277,25 +317,43 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Contact Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Need Technical Support?</h2>
           <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
             Our engineering team is ready to help you select the right sensor for your application.
           </p>
-          <Button size="lg" variant="secondary" asChild>
-            <Link href="/#contact">Contact Our Team</Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button size="lg" variant="secondary" asChild>
+              <a href="mailto:autumn@synjet-electronics.com">
+                <Mail className="mr-2 h-5 w-5" />
+                autumn@synjet-electronics.com
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="border-t py-8 bg-slate-50 dark:bg-slate-900">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} SynJet Electronics Co., Ltd. All rights reserved.
-          </p>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center space-x-3">
+              <div className="h-8 w-8 rounded bg-blue-600 flex items-center justify-center">
+                <span className="text-white font-bold">S</span>
+              </div>
+              <span className="font-bold text-blue-600">SynJet Electronics</span>
+            </div>
+            <div className="flex items-center gap-6 text-sm text-muted-foreground">
+              <a href="mailto:autumn@synjet-electronics.com" className="hover:text-blue-600 transition-colors">
+                autumn@synjet-electronics.com
+              </a>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} SynJet Electronics Co., Ltd. All rights reserved.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
