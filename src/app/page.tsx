@@ -27,28 +27,28 @@ export const metadata: Metadata = {
 
 const products = [
   {
-    name: 'SJ-ES100 Proximity Sensor',
-    description: 'High-precision inductive proximity sensor with extended detection range and robust metal housing.',
+    name: 'MT92XX High-Voltage Hall Switch Series',
+    description: 'AEC-Q100 certified Hall switch ICs with wide voltage range (3.8V-60V) and high sampling frequency up to 200KHz for automotive applications.',
     image: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_a3afe82d-324d-493b-8b7a-1cbc37f2a6de.jpeg?sign=1804947373-c00dd1d008-0-623c11f9e75e284cc164d85bc4bca1d7c5d08cde02f0a47daad7bcc3632712fd',
-    features: ['Detection Range: 2-15mm', 'IP67 Rated', 'LED Status Indicator'],
+    features: ['Voltage: 3.8-60V', 'Sampling: 200KHz', 'Temperature: -40 to 150°C', 'AEC-Q100 Certified'],
   },
   {
-    name: 'SJ-ES200 Flow Sensor',
-    description: 'Electromagnetic flow sensor with digital display, ideal for conductive liquid measurement.',
+    name: 'MT9522 Integrated Current Sensor IC',
+    description: 'High-performance isolated current sensor with 4800Vrms isolation, 250KHz bandwidth, and built-in overcurrent protection for industrial applications.',
     image: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_0c97d4b7-2c81-4151-a133-25efe24d5e18.jpeg?sign=1804947373-2f5e2b43ea-0-741ad2b481ed618b9cfe5163fb0e5a9893f2ba76fe21abbf931414056d6a59c2',
-    features: ['Accuracy: ±0.5%', 'Multiple Output Options', 'Easy Installation'],
+    features: ['Range: ±20A to ±80A', 'Isolation: 4800Vrms', 'Bandwidth: 250KHz', 'Built-in Fault Detection'],
   },
   {
-    name: 'SJ-ES300 Inductive Sensor',
-    description: 'Compact inductive sensor with stainless steel housing for harsh environments.',
+    name: 'MT86XX Micro-Power Hall Switch Series',
+    description: 'Ultra-low power Hall switch ICs with 1.7µA current consumption for battery-powered and IoT applications.',
     image: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_7d3227ac-5b66-4283-b561-f79f150887f5.jpeg?sign=1804947373-d4ad553e8f-0-cb8629513dc632eecc92ec908c34d4e23d283c02b2264254b580e063cd75460a',
-    features: ['Compact Design', 'Temperature: -25°C to +70°C', 'High Reliability'],
+    features: ['Ultra-low Power: 1.7µA', 'Voltage: 1.6-5.5V', 'Temperature: -40 to 125°C', 'Ideal for IoT Devices'],
   },
   {
-    name: 'SJ-ES400 Smart Sensor Module',
-    description: 'Intelligent electromagnetic sensor module with IoT connectivity and real-time monitoring.',
+    name: 'MT9532 High-Speed Current Sensor',
+    description: 'Advanced current sensor IC with 1MHz bandwidth, ultra-fast response time <1µs for high-performance industrial systems.',
     image: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_b768dd55-79b4-4e34-b1e3-539d1ca5ca31.jpeg?sign=1804947374-e7677c1df1-0-748ff39e42e17b81101bf9442469b9e3d8380a610a73a1ebc8fe4a847a6e8fcb',
-    features: ['IoT Ready', 'Real-time Monitoring', 'Cloud Integration'],
+    features: ['Bandwidth: 1MHz', 'Response: <1µs', 'Isolation: 4800Vrms', 'Range: ±20A to ±80A'],
   },
 ];
 
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="#products" className="text-sm font-medium hover:text-blue-600 transition-colors">
+            <Link href="/products" className="text-sm font-medium hover:text-blue-600 transition-colors">
               Products
             </Link>
             <Link href="#about" className="text-sm font-medium hover:text-blue-600 transition-colors">
@@ -204,9 +204,11 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
-              View All Products
-              <ChevronRight className="ml-2 h-4 w-4" />
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/products">
+                View All Products
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
           </div>
         </div>
