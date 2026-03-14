@@ -3,7 +3,7 @@ import path from 'path';
 
 const nextConfig: NextConfig = {
   output: 'export', // 启用静态导出
-  basePath: '/synjet-electronics-website', // GitHub Pages 项目路径
+  // basePath: '/synjet-electronics-website', // 使用自定义域名时注释掉
   // outputFileTracingRoot: path.resolve(__dirname, '../../'),
   /* config options here */
   allowedDevOrigins: ['*.dev.coze.site'],
