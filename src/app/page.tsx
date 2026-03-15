@@ -217,14 +217,16 @@ export default function Home() {
                 Trusted by Industries Worldwide
               </h2>
               <p className="text-muted-foreground mb-6">
-                SynJet Electronics has established itself as a leading manufacturer 
-                of electromagnetic sensors. Our products are used in automotive manufacturing, 
-                industrial automation, energy management, and IoT applications across the globe.
+                SynJet Electronics specialize in high-quality Chinese-brand magnetic sensor ICs 
+                (Hall switches and current sensors) from leading names like Novosense (covering 
+                the original Magntek series). Engineered for automotive, industrial, and IoT 
+                applications, our products deliver precision and reliability comparable to global 
+                standards—giving you a competitive edge.
               </p>
               <p className="text-muted-foreground mb-6">
-                With state-of-the-art R&D facilities and strict quality control processes, 
-                we deliver sensors that meet the highest international standards including 
-                ISO 9001, IATF 16949, and CE certifications.
+                Beyond sensors, we operate as a comprehensive one-stop service provider, leveraging 
+                our strong network to source everything from passives and connectors to modules, 
+                streamlining your entire supply chain.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div>
