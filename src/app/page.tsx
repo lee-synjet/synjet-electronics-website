@@ -293,15 +293,16 @@ export default function Home() {
               { name: 'Nordic', file: 'Nordic.png', cn: '诺迪克' },
             ].map((brand, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow bg-white dark:bg-slate-800">
-                <CardContent className="p-4 flex flex-col items-center justify-center min-h-[120px]">
-                  <Image
-                    src={`/brands/${brand.file}`}
-                    alt={`${brand.name} Logo`}
-                    width={150}
-                    height={80}
-                    className="object-contain max-h-20"
-                  />
-                  <p className="text-xs text-muted-foreground mt-2 text-center">{brand.cn}</p>
+                <CardContent className="p-6 flex flex-col items-center justify-center min-h-[140px]">
+                  <div className="flex items-center justify-center w-full mb-3" style={{ minHeight: '60px' }}>
+                    <img
+                      src={`/brands/${brand.file}`}
+                      alt={`${brand.name} Logo`}
+                      style={{ maxHeight: '60px', width: 'auto', height: 'auto' }}
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm text-muted-foreground text-center">{brand.cn}</p>
                 </CardContent>
               </Card>
             ))}
