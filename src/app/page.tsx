@@ -19,36 +19,32 @@ export const metadata: Metadata = {
   title: 'SynJet Electronics - Advanced Electromagnetic Sensors',
   description: 'SynJet Electronics is a leading manufacturer of high-precision electromagnetic sensors for industrial automation, automotive, and IoT applications.',
   keywords: 'electromagnetic sensors, proximity sensors, flow sensors, industrial sensors, SynJet',
-  icons: {
-    icon: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_6a61ae2f-1062-4e16-a957-4f61f1abcbd8.jpeg?sign=1804948393-ba1e281d34-0-da1ab1c2c78b0523bc74a40fa78bf7f12f615613c04358b57e98ada495888459',
-    apple: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_f079123b-ae9e-4e9e-8c29-d1aeb092480f.jpeg?sign=1804947701-e16e4ff24d-0-f70fe0d3bbf1e4d5fccf6cbb662feef5bc5096241236a9b7fd2bd71496960226',
-  },
 };
 
 const products = [
   {
-    name: 'SJ-ES100 Proximity Sensor',
-    description: 'High-precision inductive proximity sensor with extended detection range and robust metal housing.',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_a3afe82d-324d-493b-8b7a-1cbc37f2a6de.jpeg?sign=1804947373-c00dd1d008-0-623c11f9e75e284cc164d85bc4bca1d7c5d08cde02f0a47daad7bcc3632712fd',
-    features: ['Detection Range: 2-15mm', 'IP67 Rated', 'LED Status Indicator'],
+    name: 'MT92XX High-Voltage Hall Switch Series',
+    description: 'AEC-Q100 certified Hall switch ICs with wide voltage range (3.8V-60V) and high sampling frequency up to 200KHz for automotive applications.',
+    image: 'https://aka.doubaocdn.com/s/28sP1w3qQb',
+    features: ['Voltage: 3.8-60V', 'Sampling: 200KHz', 'Temperature: -40 to 150°C', 'AEC-Q100 Certified'],
   },
   {
-    name: 'SJ-ES200 Flow Sensor',
-    description: 'Electromagnetic flow sensor with digital display, ideal for conductive liquid measurement.',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_0c97d4b7-2c81-4151-a133-25efe24d5e18.jpeg?sign=1804947373-2f5e2b43ea-0-741ad2b481ed618b9cfe5163fb0e5a9893f2ba76fe21abbf931414056d6a59c2',
-    features: ['Accuracy: ±0.5%', 'Multiple Output Options', 'Easy Installation'],
+    name: 'MT9522 Integrated Current Sensor IC',
+    description: 'High-performance isolated current sensor with 4800Vrms isolation, 250KHz bandwidth, and built-in overcurrent protection for industrial applications.',
+    image: 'https://aka.doubaocdn.com/s/zNV81w3qQS',
+    features: ['Range: ±20A to ±80A', 'Isolation: 4800Vrms', 'Bandwidth: 250KHz', 'Built-in Fault Detection'],
   },
   {
-    name: 'SJ-ES300 Inductive Sensor',
-    description: 'Compact inductive sensor with stainless steel housing for harsh environments.',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_7d3227ac-5b66-4283-b561-f79f150887f5.jpeg?sign=1804947373-d4ad553e8f-0-cb8629513dc632eecc92ec908c34d4e23d283c02b2264254b580e063cd75460a',
-    features: ['Compact Design', 'Temperature: -25°C to +70°C', 'High Reliability'],
+    name: 'MT86XX Micro-Power Hall Switch Series',
+    description: 'Ultra-low power Hall switch ICs with 1.7µA current consumption for battery-powered and IoT applications.',
+    image: 'https://aka.doubaocdn.com/s/InMi1w3qQb',
+    features: ['Ultra-low Power: 1.7µA', 'Voltage: 1.6-5.5V', 'Temperature: -40 to 125°C', 'Ideal for IoT Devices'],
   },
   {
-    name: 'SJ-ES400 Smart Sensor Module',
-    description: 'Intelligent electromagnetic sensor module with IoT connectivity and real-time monitoring.',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_b768dd55-79b4-4e34-b1e3-539d1ca5ca31.jpeg?sign=1804947374-e7677c1df1-0-748ff39e42e17b81101bf9442469b9e3d8380a610a73a1ebc8fe4a847a6e8fcb',
-    features: ['IoT Ready', 'Real-time Monitoring', 'Cloud Integration'],
+    name: 'MT9532 High-Speed Current Sensor',
+    description: 'Advanced current sensor IC with 1MHz bandwidth, ultra-fast response time <1µs for high-performance industrial systems.',
+    image: 'https://aka.doubaocdn.com/s/tXc31w3qQS',
+    features: ['Bandwidth: 1MHz', 'Response: <1µs', 'Isolation: 4800Vrms', 'Range: ±20A to ±80A'],
   },
 ];
 
@@ -82,19 +78,13 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="flex items-center space-x-3">
-              <Image
-                src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_6a61ae2f-1062-4e16-a957-4f61f1abcbd8.jpeg?sign=1804948393-ba1e281d34-0-da1ab1c2c78b0523bc74a40fa78bf7f12f615613c04358b57e98ada495888459"
-                alt="SynJet Logo"
-                width={40}
-                height={40}
-                className="h-10 w-10"
-              />
-              <span className="text-xl font-bold text-blue-600">SynJet</span>
+            <div className="h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center">
+              <span className="text-white font-bold text-xl">S</span>
             </div>
+            <span className="text-xl font-bold text-blue-600">SynJet</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="#products" className="text-sm font-medium hover:text-blue-600 transition-colors">
+            <Link href="/products" className="text-sm font-medium hover:text-blue-600 transition-colors">
               Products
             </Link>
             <Link href="#about" className="text-sm font-medium hover:text-blue-600 transition-colors">
@@ -105,7 +95,7 @@ export default function Home() {
             </Link>
           </nav>
           <Button asChild>
-            <Link href="#contact">Get Quote</Link>
+            <a href="mailto:autumn@synjet-electronics.com">Get Quote</a>
           </Button>
         </div>
       </header>
@@ -116,8 +106,8 @@ export default function Home() {
         <div className="relative container mx-auto px-4 py-24 md:py-32">
           <div className="flex flex-col items-center text-center space-y-6">
             <div className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium">
-              <span className="text-blue-600">New Release</span>
-              <span className="ml-2">SJ-ES400 Smart Sensor Series</span>
+              <span className="text-blue-600">Featured</span>
+              <span className="ml-2">Hall Effect & Current Sensor Series</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">
@@ -130,10 +120,10 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button size="lg" asChild>
-                <Link href="#products">Explore Products</Link>
+                <Link href="/products">Explore Products</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="#contact">Request Sample</Link>
+                <a href="mailto:autumn@synjet-electronics.com?subject=Product Inquiry">Request Sample</a>
               </Button>
             </div>
           </div>
@@ -180,12 +170,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow group">
-                <div className="relative h-48 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 overflow-hidden">
+                <div className="relative h-48 bg-slate-100 dark:bg-slate-800 overflow-hidden">
                   <Image
                     src={product.image}
                     alt={product.name}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <CardContent className="p-6">
@@ -204,9 +194,11 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
-              View All Products
-              <ChevronRight className="ml-2 h-4 w-4" />
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/products">
+                View All Products
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
           </div>
         </div>
@@ -221,7 +213,7 @@ export default function Home() {
                 Trusted by Industries Worldwide
               </h2>
               <p className="text-muted-foreground mb-6">
-                Founded in 2008, SynJet Electronics has established itself as a leading manufacturer 
+                SynJet Electronics has established itself as a leading manufacturer 
                 of electromagnetic sensors. Our products are used in automotive manufacturing, 
                 industrial automation, energy management, and IoT applications across the globe.
               </p>
@@ -264,87 +256,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand Identity Section */}
-      <section className="py-20 bg-slate-50 dark:bg-slate-900">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Brand Identity</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              SynJet brand represents innovation, precision, and reliability in electromagnetic sensor technology
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="overflow-hidden">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 h-32 flex items-center justify-center">
-                  <Image
-                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_6a61ae2f-1062-4e16-a957-4f61f1abcbd8.jpeg?sign=1804948393-ba1e281d34-0-da1ab1c2c78b0523bc74a40fa78bf7f12f615613c04358b57e98ada495888459"
-                    alt="SynJet Primary Logo"
-                    width={120}
-                    height={120}
-                    className="object-contain"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Primary Logo</h3>
-                <p className="text-sm text-muted-foreground">Blue S with electromagnetic coil design</p>
-              </CardContent>
-            </Card>
-            <Card className="overflow-hidden">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 h-32 flex items-center justify-center">
-                  <Image
-                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_74113d01-5272-48a3-9d33-712a62776867.jpeg?sign=1804947677-1508162838-0-c66cf2117458e8cbbe924304d184ad12c25b08c82064ea1be13293ccc802258c"
-                    alt="SynJet Logo Style 2"
-                    width={120}
-                    height={120}
-                    className="object-contain"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Tech Innovation</h3>
-                <p className="text-sm text-muted-foreground">Circuit pattern integrated with letter S and J</p>
-              </CardContent>
-            </Card>
-            <Card className="overflow-hidden">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 h-32 flex items-center justify-center">
-                  <Image
-                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_e877ada7-0a93-4ad7-bba7-c58f60a7e748.jpeg?sign=1804947678-ae7635a2aa-0-5593eef26905bfd84b49470d3c7805c442b82b46a4252f7565f4826807ef0144"
-                    alt="SynJet Logo Style 3"
-                    width={120}
-                    height={120}
-                    className="object-contain"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Premium Brand</h3>
-                <p className="text-sm text-muted-foreground">Metallic blue finish with high-tech aesthetic</p>
-              </CardContent>
-            </Card>
-            <Card className="overflow-hidden">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 h-32 flex items-center justify-center">
-                  <Image
-                    src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_f079123b-ae9e-4e9e-8c29-d1aeb092480f.jpeg?sign=1804947701-e16e4ff24d-0-f70fe0d3bbf1e4d5fccf6cbb662feef5bc5096241236a9b7fd2bd71496960226"
-                    alt="SynJet App Icon"
-                    width={120}
-                    height={120}
-                    className="object-contain rounded-2xl"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">App Icon</h3>
-                <p className="text-sm text-muted-foreground">Modern iOS style icon with gradient background</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Have questions about our products? Our technical team is ready to assist you.
+              Have questions about our products? Our sales team is ready to assist you.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -354,8 +272,9 @@ export default function Home() {
                   <Mail className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold mb-2">Email</h3>
-                <p className="text-sm text-muted-foreground">sales@synjet-electronics.com</p>
-                <p className="text-sm text-muted-foreground">support@synjet-electronics.com</p>
+                <a href="mailto:autumn@synjet-electronics.com" className="text-sm text-blue-600 hover:underline">
+                  autumn@synjet-electronics.com
+                </a>
               </CardContent>
             </Card>
             <Card>
@@ -364,8 +283,7 @@ export default function Home() {
                   <Phone className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold mb-2">Phone</h3>
-                <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
-                <p className="text-sm text-muted-foreground">+86 (21) 8765-4321</p>
+                <p className="text-sm text-muted-foreground">+86 (21) 2096-5129</p>
               </CardContent>
             </Card>
             <Card>
@@ -375,35 +293,39 @@ export default function Home() {
                 </div>
                 <h3 className="font-semibold mb-2">Headquarters</h3>
                 <p className="text-sm text-muted-foreground">
-                  123 Industrial Park, Tech Valley<br />
-                  Shanghai, China 200000
+                  Shanghai, China
                 </p>
               </CardContent>
             </Card>
           </div>
           <Card className="mt-8">
             <CardContent className="p-8">
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <form className="grid grid-cols-1 md:grid-cols-2 gap-6" action="mailto:autumn@synjet-electronics.com" method="post" encType="text/plain">
                 <div>
                   <label className="text-sm font-medium mb-2 block">Name</label>
                   <input
                     type="text"
+                    name="name"
                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-slate-800"
                     placeholder="Your name"
+                    required
                   />
                 </div>
                 <div>
                   <label className="text-sm font-medium mb-2 block">Email</label>
                   <input
                     type="email"
+                    name="email"
                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-slate-800"
                     placeholder="your@email.com"
+                    required
                   />
                 </div>
                 <div className="md:col-span-2">
                   <label className="text-sm font-medium mb-2 block">Subject</label>
                   <input
                     type="text"
+                    name="subject"
                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-slate-800"
                     placeholder="How can we help?"
                   />
@@ -411,9 +333,11 @@ export default function Home() {
                 <div className="md:col-span-2">
                   <label className="text-sm font-medium mb-2 block">Message</label>
                   <textarea
+                    name="message"
                     rows={4}
                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-slate-800"
                     placeholder="Tell us about your requirements..."
+                    required
                   />
                 </div>
                 <div className="md:col-span-2">
@@ -433,13 +357,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7616740022158622770/image/generate_image_6a61ae2f-1062-4e16-a957-4f61f1abcbd8.jpeg?sign=1804948393-ba1e281d34-0-da1ab1c2c78b0523bc74a40fa78bf7f12f615613c04358b57e98ada495888459"
-                  alt="SynJet Logo"
-                  width={32}
-                  height={32}
-                  className="h-8 w-8"
-                />
+                <div className="h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center">
+                  <span className="text-white font-bold text-xl">S</span>
+                </div>
                 <span className="text-xl font-bold text-blue-600">SynJet</span>
               </div>
               <p className="text-sm text-muted-foreground">
@@ -449,38 +369,33 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="#" className="hover:text-blue-600">Proximity Sensors</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">Flow Sensors</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">Inductive Sensors</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">Smart Modules</Link></li>
+                <li><Link href="/products" className="hover:text-blue-600 transition-colors">Hall Switch Sensors</Link></li>
+                <li><Link href="/products" className="hover:text-blue-600 transition-colors">Current Sensors</Link></li>
+                <li><Link href="/products" className="hover:text-blue-600 transition-colors">Magnetoresistive Sensors</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="#" className="hover:text-blue-600">About Us</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">Careers</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">News</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">Contact</Link></li>
+                <li><Link href="#about" className="hover:text-blue-600 transition-colors">About Us</Link></li>
+                <li><Link href="#contact" className="hover:text-blue-600 transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Support</h4>
+              <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="#" className="hover:text-blue-600">Documentation</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">Technical Support</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">Warranty</Link></li>
-                <li><Link href="#" className="hover:text-blue-600">FAQs</Link></li>
+                <li>
+                  <a href="mailto:autumn@synjet-electronics.com" className="hover:text-blue-600 transition-colors">
+                    autumn@synjet-electronics.com
+                  </a>
+                </li>
+                <li>+86 (21) 2096-5129</li>
+                <li>Shanghai, China</li>
               </ul>
             </div>
           </div>
-          <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} SynJet Electronics Co., Ltd. All rights reserved.
-            </p>
-            <p className="text-sm text-muted-foreground mt-2 md:mt-0">
-              www.synjet-electronics.com
-            </p>
+          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
+            <p>© {new Date().getFullYear()} SynJet Electronics Co., Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>
