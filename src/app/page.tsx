@@ -78,9 +78,13 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center">
-              <span className="text-white font-bold text-xl">S</span>
-            </div>
+            <Image
+              src="https://code.coze.cn/api/sandbox/coze_coding/file/proxy?expire_time=-1&file_path=assets%2Fgenerate_image_74113d01-5272-48a3-9d33-712a62776867.webp&nonce=9489a992-416b-43b8-b432-e6a26d688d6a&project_id=7616738217844523059&sign=e664257a51264f4c7bd6335337e289af330a9fe5208fdd0e090fc067e2fa11b5"
+              alt="SynJet Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10"
+            />
             <span className="text-xl font-bold text-blue-600">SynJet</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
@@ -357,9 +361,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">S</span>
-                </div>
+                <Image
+                  src="https://code.coze.cn/api/sandbox/coze_coding/file/proxy?expire_time=-1&file_path=assets%2Fgenerate_image_74113d01-5272-48a3-9d33-712a62776867.webp&nonce=9489a992-416b-43b8-b432-e6a26d688d6a&project_id=7616738217844523059&sign=e664257a51264f4c7bd6335337e289af330a9fe5208fdd0e090fc067e2fa11b5"
+                  alt="SynJet Logo"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10"
+                />
                 <span className="text-xl font-bold text-blue-600">SynJet</span>
               </div>
               <p className="text-sm text-muted-foreground">

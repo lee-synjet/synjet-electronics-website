@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
         hostname: 'coze-coding-project.tos.coze.site',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'code.coze.cn',
+        pathname: '/**',
+      },
     ],
   },
 };
