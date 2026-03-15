@@ -208,6 +208,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Brand Partners Section */}
+      <section className="py-20 bg-slate-50 dark:bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Brand Partners</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              We partner with leading Chinese semiconductor brands to deliver high-quality solutions
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <Card className="overflow-hidden shadow-lg max-w-5xl">
+              <CardContent className="p-8">
+                <Image
+                  src="https://code.coze.cn/api/sandbox/coze_coding/file/proxy?expire_time=-1&file_path=assets%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260315214538_11_7.jpg&nonce=8edc17c8-da31-47a4-862c-b95141f1995e&project_id=7616738217844523059&sign=41a50767f0156f3b1b1364154f3ff85cfe4826b865ac31dfe558a1d4b5db45b0"
+                  alt="Brand Partners - Product Lines"
+                  width={1200}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </CardContent>
+            </Card>
+          </div>
+          <div className="mt-8 text-center">
+            <p className="text-sm text-muted-foreground">
+              Featuring products from: Geehy, XLSEMI, VTran Tech, COMNTEK, MagnTek, SILERGY, MPS, 
+              CHIPANALOG, 瑞盟科技, 茂睿芯, Semione, 3PEAK, JGDZ, 中晶新源, 新洁能, AIC, GLOBALCHIP, Nordic
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-20 bg-slate-50 dark:bg-slate-900">
         <div className="container mx-auto px-4">
