@@ -217,24 +217,40 @@ export default function Home() {
               We partner with leading Chinese semiconductor brands to deliver high-quality solutions
             </p>
           </div>
-          <div className="flex justify-center">
-            <Card className="overflow-hidden shadow-lg max-w-5xl">
-              <CardContent className="p-8">
-                <Image
-                  src="https://code.coze.cn/api/sandbox/coze_coding/file/proxy?expire_time=-1&file_path=assets%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260315214538_11_7.jpg&nonce=8edc17c8-da31-47a4-862c-b95141f1995e&project_id=7616738217844523059&sign=41a50767f0156f3b1b1364154f3ff85cfe4826b865ac31dfe558a1d4b5db45b0"
-                  alt="Brand Partners - Product Lines"
-                  width={1200}
-                  height={600}
-                  className="w-full h-auto"
-                />
-              </CardContent>
-            </Card>
-          </div>
-          <div className="mt-8 text-center">
-            <p className="text-sm text-muted-foreground">
-              Featuring products from: Geehy, XLSEMI, VTran Tech, COMNTEK, MagnTek, SILERGY, MPS, 
-              CHIPANALOG, 瑞盟科技, 茂睿芯, Semione, 3PEAK, JGDZ, 中晶新源, 新洁能, AIC, GLOBALCHIP, Nordic
-            </p>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+            {[
+              { name: 'Geehy', file: 'Geehy.png', cn: '极海' },
+              { name: 'XLSEMI', file: 'XLSEMI.png', cn: '芯龙' },
+              { name: 'VTran Tech', file: 'VTran_Tech.png', cn: '微传' },
+              { name: 'COMNTEK', file: 'COMNTEK.png', cn: '昆泰芯' },
+              { name: 'MagnTek', file: 'MagnTek.png', cn: '麦歌恩' },
+              { name: 'SILERGY', file: 'SILERGY.png', cn: '矽力杰' },
+              { name: 'MPS', file: 'MPS.png', cn: 'MPS' },
+              { name: 'CHIPANALOG', file: 'CHIPANALOG.png', cn: '川土微' },
+              { name: '瑞盟科技', file: 'Ruimeng.png', cn: '瑞盟' },
+              { name: '茂睿芯', file: 'Maorixin.png', cn: '茂睿芯' },
+              { name: 'Semione', file: 'Semione.png', cn: '芯电元' },
+              { name: '3PEAK', file: '3PEAK.png', cn: '3PEAK' },
+              { name: 'JGDZ', file: 'JGDZ.png', cn: '晶工电子' },
+              { name: '中晶新源', file: 'Zhongjing_Xinyuan.png', cn: '中晶新源' },
+              { name: '新洁能', file: 'Xinjieneng.png', cn: '新洁能' },
+              { name: 'AIC', file: 'AIC.png', cn: '骏材' },
+              { name: 'GLOBALCHIP', file: 'GLOBALCHIP.png', cn: '芯麦' },
+              { name: 'Nordic', file: 'Nordic.png', cn: '诺迪克' },
+            ].map((brand, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow bg-white dark:bg-slate-800">
+                <CardContent className="p-4 flex flex-col items-center justify-center min-h-[120px]">
+                  <Image
+                    src={`/brands/${brand.file}`}
+                    alt={`${brand.name} Logo`}
+                    width={150}
+                    height={80}
+                    className="object-contain max-h-20"
+                  />
+                  <p className="text-xs text-muted-foreground mt-2 text-center">{brand.cn}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
