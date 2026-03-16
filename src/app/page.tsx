@@ -275,7 +275,25 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-6 max-w-4xl mx-auto">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
+            <div className="bg-white rounded-lg p-3 md:p-4 flex items-center justify-center aspect-square hover:bg-slate-50 transition-colors">
+              <Image
+                src="/brands/novosns-1.png"
+                alt="Novosns"
+                width={80}
+                height={80}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="bg-white rounded-lg p-3 md:p-4 flex items-center justify-center aspect-square hover:bg-slate-50 transition-colors">
+              <Image
+                src="/brands/novosns-2.png"
+                alt="Novosns"
+                width={80}
+                height={80}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
               <div key={i} className="bg-white rounded-lg p-3 md:p-4 flex items-center justify-center aspect-square hover:bg-slate-50 transition-colors">
                 <Image
                   src={`/brands/brand_${i}.jpg`}
