@@ -298,12 +298,16 @@ export default function Home() {
                 Your Reliable Semiconductor Partner
               </h2>
               <p className="text-slate-600 mb-4">
-                SynJet Electronics is an authorized distributor specializing in high-quality Chinese-brand 
-                magnetic sensor ICs, including Hall switches, current sensors, and magnetic position sensors.
+                SynJet Electronics specialize in high-quality Chinese-brand magnetic sensor ICs 
+                (Hall switches and current sensors) from leading names like Novosense (covering 
+                the original Magntek series). Engineered for automotive, industrial, and IoT 
+                applications, our products deliver precision and reliability comparable to global 
+                standards—giving you a competitive edge.
               </p>
               <p className="text-slate-600 mb-6">
-                We work directly with manufacturers to ensure you receive genuine, fully traceable components.
-                Our experienced FAE team provides technical support from product selection to design-in.
+                Beyond sensors, we operate as a comprehensive one-stop service provider, leveraging 
+                our strong network to source everything from passives and connectors to modules, 
+                streamlining your entire supply chain.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8">
                 {stats.map((stat, index) => (
