@@ -274,7 +274,7 @@ export default function Home() {
               Official authorized distributor for leading Chinese semiconductor manufacturers
             </p>
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-4 md:grid-cols-5 gap-4 md:gap-6 max-w-5xl mx-auto">
             <div className="bg-white rounded-lg p-3 md:p-4 flex items-center justify-center aspect-square hover:bg-slate-50 transition-colors">
               <Image
                 src="/brands/novosns-1.png"
@@ -293,7 +293,7 @@ export default function Home() {
                 className="w-full h-full object-contain"
               />
             </div>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map((i) => (
               <div key={i} className="bg-white rounded-lg p-3 md:p-4 flex items-center justify-center aspect-square hover:bg-slate-50 transition-colors">
                 <Image
                   src={`/brands/brand_${i}.jpg`}
