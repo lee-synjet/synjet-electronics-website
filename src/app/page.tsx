@@ -6,7 +6,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { 
   Shield, 
   Mail, 
-  Phone, 
   MapPin,
   CheckCircle2,
   Clock,
@@ -323,7 +322,7 @@ export default function Home() {
               Have questions about our products? Our team is ready to help.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-8">
             <Card className="border border-slate-200">
               <CardContent className="p-6 text-center">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-blue-50 mb-4">
@@ -338,19 +337,10 @@ export default function Home() {
             <Card className="border border-slate-200">
               <CardContent className="p-6 text-center">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-blue-50 mb-4">
-                  <Phone className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="font-semibold mb-2 text-slate-900">Phone</h3>
-                <p className="text-sm text-slate-600">+86 (21) 2096-5129</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-slate-200">
-              <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-blue-50 mb-4">
                   <MapPin className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold mb-2 text-slate-900">Location</h3>
-                <p className="text-sm text-slate-600">Shanghai, China</p>
+                <p className="text-sm text-slate-600">Shenzhen, China</p>
               </CardContent>
             </Card>
           </div>
@@ -439,8 +429,7 @@ export default function Home() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-slate-400">
                 <li>autumn@synjet-electronics.com</li>
-                <li>+86 (21) 2096-5129</li>
-                <li>Shanghai, China</li>
+                <li>Shenzhen, China</li>
               </ul>
             </div>
           </div>
