@@ -13,7 +13,10 @@ import {
   FileText,
   MessageSquare,
   Award,
-  ArrowRight
+  ArrowRight,
+  Car,
+  Factory,
+  Home as HomeIcon
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -79,7 +82,7 @@ export default function Home() {
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="https://code.coze.cn/api/sandbox/coze_coding/file/proxy?expire_time=-1&file_path=assets%2Fgenerate_image_74113d01-5272-48a3-9d33-712a62776867.webp&nonce=9489a992-416b-43b8-b432-e6a26d688d6a&project_id=7616738217844523059&sign=e664257a51264f4c7bd6335337e289af330a9fe5208fdd0e090fc067e2fa11b5"
+              src="/logo.webp"
               alt="SynJet Logo"
               width={36}
               height={36}
@@ -93,6 +96,9 @@ export default function Home() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="#products" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
               Products
+            </Link>
+            <Link href="/applications" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+              Applications
             </Link>
             <Link href="#brands" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
               Brands
@@ -244,6 +250,103 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Applications Section */}
+      <section id="applications" className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Application Scenarios</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Our magnetic sensors power innovation across transportation, manufacturing, and smart home industries
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link href="/applications/intelligent-transportation" className="group">
+              <Card className="h-full border border-slate-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div className="relative h-48 bg-gradient-to-br from-blue-600 to-blue-800">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Car className="h-20 w-20 text-white/20" />
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-xl font-bold text-white">Intelligent Transportation</h3>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <p className="text-slate-600 text-sm mb-4">
+                    AEC-Q100 certified sensors for automotive applications, from e-bikes to new energy vehicles.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">ABS/ESP</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">EPS</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">BMS</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Motor Control</span>
+                  </div>
+                  <div className="flex items-center text-blue-600 font-medium">
+                    Learn More
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link href="/applications/smart-manufacturing" className="group">
+              <Card className="h-full border border-slate-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div className="relative h-48 bg-gradient-to-br from-green-600 to-green-800">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Factory className="h-20 w-20 text-white/20" />
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-xl font-bold text-white">Smart Manufacturing</h3>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <p className="text-slate-600 text-sm mb-4">
+                    High-reliability sensors for industrial automation, robotics, and precision equipment.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Robot Arms</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">CNC</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Linear Motors</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Encoders</span>
+                  </div>
+                  <div className="flex items-center text-blue-600 font-medium">
+                    Learn More
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link href="/applications/smart-home" className="group">
+              <Card className="h-full border border-slate-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div className="relative h-48 bg-gradient-to-br from-purple-600 to-purple-800">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <HomeIcon className="h-20 w-20 text-white/20" />
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-xl font-bold text-white">Smart Home</h3>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <p className="text-slate-600 text-sm mb-4">
+                    Low-power magnetic sensors for home appliances, security systems, and IoT devices.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Appliances</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Security</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Meters</span>
+                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Smart Locks</span>
+                  </div>
+                  <div className="flex items-center text-blue-600 font-medium">
+                    Learn More
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
