@@ -271,7 +271,7 @@ export default function Home() {
               We partner with leading Chinese semiconductor brands to deliver high-quality solutions
             </p>
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 md:gap-6">
             {[
               { name: 'Brand 1', file: 'brand_1.jpg' },
               { name: 'Brand 2', file: 'brand_2.jpg' },
@@ -282,15 +282,24 @@ export default function Home() {
               { name: 'Brand 7', file: 'brand_7.jpg' },
               { name: 'Brand 8', file: 'brand_8.jpg' },
               { name: 'Brand 9', file: 'brand_9.jpg' },
+              { name: 'Brand 10', file: 'brand_10.jpg' },
+              { name: 'Brand 11', file: 'brand_11.jpg' },
+              { name: 'Brand 12', file: 'brand_12.jpg' },
+              { name: 'Brand 13', file: 'brand_13.jpg' },
+              { name: 'Brand 14', file: 'brand_14.jpg' },
+              { name: 'Brand 15', file: 'brand_15.jpg' },
+              { name: 'Brand 16', file: 'brand_16.jpg' },
+              { name: 'Brand 17', file: 'brand_17.jpg' },
+              { name: 'Brand 18', file: 'brand_18.jpg' },
             ].map((brand, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow bg-white dark:bg-slate-800">
-                <CardContent className="p-6 flex flex-col items-center justify-center min-h-[140px]">
-                  <div className="flex items-center justify-center w-full mb-3" style={{ minHeight: '80px' }}>
+                <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center min-h-[100px] md:min-h-[140px]">
+                  <div className="flex items-center justify-center w-full">
                     <img
                       src={`/brands/${brand.file}`}
                       alt={brand.name}
-                      style={{ maxHeight: '80px', width: 'auto', height: 'auto', maxWidth: '100%' }}
-                      className="object-contain"
+                      style={{ maxHeight: '60px' }}
+                      className="w-auto h-auto max-w-full object-contain md:max-h-[80px]"
                     />
                   </div>
                 </CardContent>
