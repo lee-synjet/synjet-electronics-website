@@ -115,7 +115,7 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <Button className="bg-slate-900 hover:bg-slate-800" asChild>
+          <Button className="bg-slate-900 hover:bg-slate-800 text-white" asChild>
             <a href="mailto:autumn@synjet-electronics.com?subject=Quote Request">
               Request Quote
             </a>
@@ -237,7 +237,7 @@ export default function Home() {
                         Datasheet
                       </a>
                     </Button>
-                    <Button size="sm" className="flex-1 bg-slate-900 hover:bg-slate-800" asChild>
+                    <Button size="sm" className="flex-1 bg-slate-900 hover:bg-slate-800 text-white" asChild>
                       <a href={`mailto:autumn@synjet-electronics.com?subject=Quote: ${product.name}`}>
                         <MessageSquare className="h-3.5 w-3.5 mr-1" />
                         Quote
@@ -313,7 +313,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <Button className="bg-slate-900 hover:bg-slate-800" asChild>
+              <Button className="bg-slate-900 hover:bg-slate-800 text-white" asChild>
                 <a href="#contact">
                   Contact Us
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -438,7 +438,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <Button size="lg" className="bg-slate-900 hover:bg-slate-800" type="submit">
+                  <Button size="lg" className="bg-slate-900 hover:bg-slate-800 text-white" type="submit">
                     Send Message
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
