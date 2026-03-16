@@ -152,7 +152,7 @@ export default function Home() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800" asChild>
+              <Button size="lg" className="border border-slate-400 text-white hover:bg-slate-700 bg-transparent" asChild>
                 <a href="mailto:autumn@synjet-electronics.com?subject=Quote Request">
                   Request Quote
                 </a>
