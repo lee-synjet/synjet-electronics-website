@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { 
   Shield, 
-  Cpu, 
   Mail, 
   Phone, 
   MapPin,
@@ -14,8 +13,6 @@ import {
   DollarSign,
   FileText,
   MessageSquare,
-  Package,
-  Users,
   Award,
   ArrowRight
 } from 'lucide-react';
@@ -73,13 +70,6 @@ const features = [
     title: 'Fast Response',
     description: '24-48h quote turnaround. Quick delivery from Shanghai warehouse.',
   },
-];
-
-const stats = [
-  { label: 'Years in Industry', value: '15+' },
-  { label: 'Customers Worldwide', value: '500+' },
-  { label: 'Product Models', value: '1000+' },
-  { label: 'Authorized Brands', value: '18' },
 ];
 
 export default function Home() {
@@ -288,72 +278,37 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
               <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700 mb-6">
                 <Award className="h-4 w-4 mr-2" />
                 Authorized Distributor
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-slate-900">
                 Your Reliable Semiconductor Partner
               </h2>
-              <p className="text-slate-600 mb-4">
+            </div>
+            <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+              <p>
                 SynJet Electronics specialize in high-quality Chinese-brand magnetic sensor ICs 
                 (Hall switches and current sensors) from leading names like Novosense (covering 
                 the original Magntek series). Engineered for automotive, industrial, and IoT 
                 applications, our products deliver precision and reliability comparable to global 
                 standards—giving you a competitive edge.
               </p>
-              <p className="text-slate-600 mb-6">
+              <p>
                 Beyond sensors, we operate as a comprehensive one-stop service provider, leveraging 
                 our strong network to source everything from passives and connectors to modules, 
                 streamlining your entire supply chain.
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8">
-                {stats.map((stat, index) => (
-                  <div key={index}>
-                    <div className="text-3xl font-bold text-slate-900">{stat.value}</div>
-                    <div className="text-sm text-slate-600">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
+            </div>
+            <div className="mt-10 flex justify-center">
               <Button className="bg-slate-900 hover:bg-slate-800 text-white" asChild>
                 <a href="#contact">
                   Contact Us
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
-            </div>
-            <div className="bg-slate-100 rounded-lg p-8 lg:p-12">
-              <div className="grid grid-cols-1 gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                    <Package className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg text-slate-900 mb-1">Wide Product Range</h3>
-                    <p className="text-slate-600">1000+ models of Hall switches, current sensors, and magnetic ICs</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                    <Users className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg text-slate-900 mb-1">FAE Support</h3>
-                    <p className="text-slate-600">Technical support from selection to design-in</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                    <Clock className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg text-slate-900 mb-1">Quick Response</h3>
-                    <p className="text-slate-600">24-48h quote turnaround, fast delivery from Shanghai</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
