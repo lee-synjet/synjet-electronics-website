@@ -12,7 +12,9 @@ import {
   Phone, 
   MapPin,
   ChevronRight,
-  CheckCircle2
+  CheckCircle2,
+  Clock,
+  DollarSign
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -50,24 +52,19 @@ const products = [
 
 const features = [
   {
-    icon: Zap,
-    title: 'High Precision',
-    description: 'Industry-leading accuracy with advanced signal processing technology.',
-  },
-  {
     icon: Shield,
-    title: 'Robust Design',
-    description: 'Built to withstand harsh industrial environments with IP67+ ratings.',
+    title: '100% Original & Traceable',
+    description: 'Only genuine, factory-direct components. Zero counterfeits.',
   },
   {
-    icon: Cpu,
-    title: 'Smart Technology',
-    description: 'Intelligent sensors with self-diagnostics and predictive maintenance.',
+    icon: DollarSign,
+    title: 'Save 20-30%',
+    description: 'Competitive pricing on high-performance alternatives.',
   },
   {
-    icon: Globe,
-    title: 'Global Support',
-    description: 'Technical support and service network spanning 50+ countries.',
+    icon: Clock,
+    title: 'Save Time',
+    description: 'Fast delivery, efficient service.',
   },
 ];
 
@@ -143,7 +140,7 @@ export default function Home() {
               Leading the industry with innovation, quality, and exceptional customer support
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
