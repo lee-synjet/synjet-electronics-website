@@ -273,36 +273,26 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
             {[
-              { name: 'Geehy', file: 'Geehy.png', cn: '极海' },
-              { name: 'XLSEMI', file: 'XLSEMI.png', cn: '芯龙' },
-              { name: 'VTran Tech', file: 'VTran_Tech.png', cn: '微传' },
-              { name: 'COMNTEK', file: 'COMNTEK.png', cn: '昆泰芯' },
-              { name: 'MagnTek', file: 'MagnTek.png', cn: '麦歌恩' },
-              { name: 'SILERGY', file: 'SILERGY.png', cn: '矽力杰' },
-              { name: 'MPS', file: 'MPS.png', cn: 'MPS' },
-              { name: 'CHIPANALOG', file: 'CHIPANALOG.png', cn: '川土微' },
-              { name: '瑞盟科技', file: 'Ruimeng.png', cn: '瑞盟' },
-              { name: '茂睿芯', file: 'Maorixin.png', cn: '茂睿芯' },
-              { name: 'Semione', file: 'Semione.png', cn: '芯电元' },
-              { name: '3PEAK', file: '3PEAK.png', cn: '3PEAK' },
-              { name: 'JGDZ', file: 'JGDZ.png', cn: '晶工电子' },
-              { name: '中晶新源', file: 'Zhongjing_Xinyuan.png', cn: '中晶新源' },
-              { name: '新洁能', file: 'Xinjieneng.png', cn: '新洁能' },
-              { name: 'AIC', file: 'AIC.png', cn: '骏材' },
-              { name: 'GLOBALCHIP', file: 'GLOBALCHIP.png', cn: '芯麦' },
-              { name: 'Nordic', file: 'Nordic.png', cn: '诺迪克' },
+              { name: 'Brand 1', file: 'brand_1.jpg' },
+              { name: 'Brand 2', file: 'brand_2.jpg' },
+              { name: 'Brand 3', file: 'brand_3.jpg' },
+              { name: 'Brand 4', file: 'brand_4.jpg' },
+              { name: 'Brand 5', file: 'brand_5.jpg' },
+              { name: 'Brand 6', file: 'brand_6.jpg' },
+              { name: 'Brand 7', file: 'brand_7.jpg' },
+              { name: 'Brand 8', file: 'brand_8.jpg' },
+              { name: 'Brand 9', file: 'brand_9.jpg' },
             ].map((brand, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow bg-white dark:bg-slate-800">
                 <CardContent className="p-6 flex flex-col items-center justify-center min-h-[140px]">
-                  <div className="flex items-center justify-center w-full mb-3" style={{ minHeight: '60px' }}>
+                  <div className="flex items-center justify-center w-full mb-3" style={{ minHeight: '80px' }}>
                     <img
                       src={`/brands/${brand.file}`}
-                      alt={`${brand.name} Logo`}
-                      style={{ maxHeight: '60px', width: 'auto', height: 'auto' }}
+                      alt={brand.name}
+                      style={{ maxHeight: '80px', width: 'auto', height: 'auto', maxWidth: '100%' }}
                       className="object-contain"
                     />
                   </div>
-                  <p className="text-sm text-muted-foreground text-center">{brand.cn}</p>
                 </CardContent>
               </Card>
             ))}
