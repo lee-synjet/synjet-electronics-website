@@ -11,10 +11,7 @@ import {
   Clock,
   DollarSign,
   Award,
-  ArrowRight,
-  Car,
-  Factory,
-  Home as HomeIcon
+  ArrowRight
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -171,10 +168,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Link href="/applications/intelligent-transportation" className="group">
               <Card className="h-full border border-slate-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
-                <div className="relative h-48 bg-gradient-to-br from-blue-600 to-blue-800">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Car className="h-20 w-20 text-white/20" />
-                  </div>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/applications/images/transport-banner.jpg"
+                    alt="Intelligent Transportation"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl font-bold text-white">Intelligent Transportation</h3>
                   </div>
@@ -199,10 +200,14 @@ export default function Home() {
             
             <Link href="/applications/smart-manufacturing" className="group">
               <Card className="h-full border border-slate-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
-                <div className="relative h-48 bg-gradient-to-br from-green-600 to-green-800">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Factory className="h-20 w-20 text-white/20" />
-                  </div>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/applications/images/manufacturing-banner.jpg"
+                    alt="Smart Manufacturing"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl font-bold text-white">Smart Manufacturing</h3>
                   </div>
@@ -227,10 +232,14 @@ export default function Home() {
             
             <Link href="/applications/smart-home" className="group">
               <Card className="h-full border border-slate-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
-                <div className="relative h-48 bg-gradient-to-br from-purple-600 to-purple-800">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <HomeIcon className="h-20 w-20 text-white/20" />
-                  </div>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/applications/images/smarthome-banner.jpg"
+                    alt="Smart Home"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl font-bold text-white">Smart Home</h3>
                   </div>

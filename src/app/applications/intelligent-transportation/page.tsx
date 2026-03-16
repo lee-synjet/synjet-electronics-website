@@ -80,9 +80,6 @@ export default function IntelligentTransportationPage() {
             </div>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/products" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
-              Products
-            </Link>
             <Link href="/applications" className="text-sm font-medium text-blue-600">
               Applications
             </Link>
