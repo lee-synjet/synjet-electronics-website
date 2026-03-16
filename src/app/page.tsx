@@ -274,17 +274,22 @@ export default function Home() {
               Official authorized distributor for leading Chinese semiconductor manufacturers
             </p>
           </div>
-          <div className="flex justify-center">
-            <div className="bg-white rounded-xl p-8 flex items-center justify-center min-h-[120px] w-full max-w-md hover:bg-slate-50 transition-colors">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-slate-900">Novosns</h3>
-                <p className="text-slate-500 text-sm mt-1">纳芯微电子 - 磁传感器专家</p>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-6 max-w-4xl mx-auto">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
+              <div key={i} className="bg-white rounded-lg p-3 md:p-4 flex items-center justify-center aspect-square hover:bg-slate-50 transition-colors">
+                <Image
+                  src={`/brands/brand_${i}.jpg`}
+                  alt={`Brand ${i}`}
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-contain"
+                />
               </div>
-            </div>
+            ))}
           </div>
           <div className="text-center mt-8">
             <p className="text-slate-400 text-sm">
-              More brands coming soon. Contact us for other semiconductor products.
+              More brands available. Contact us for other semiconductor products.
             </p>
           </div>
         </div>
