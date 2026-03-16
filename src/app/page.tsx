@@ -10,8 +10,6 @@ import {
   CheckCircle2,
   Clock,
   DollarSign,
-  FileText,
-  MessageSquare,
   Award,
   ArrowRight,
   Car,
@@ -21,40 +19,9 @@ import {
 
 export const metadata: Metadata = {
   title: 'SynJet Electronics - Authorized Distributor of Magnetic Sensor ICs',
-  description: 'Authorized distributor of genuine magnetic sensor ICs, Hall switches, and current sensors. 100% original components with full traceability. Competitive pricing and fast delivery.',
-  keywords: 'magnetic sensor ICs, Hall switch, current sensor, authorized distributor, semiconductor distributor',
+  description: 'Authorized distributor of magnetic sensor ICs from Novosns. 100% original components with full traceability.',
+  keywords: 'magnetic sensor ICs, Hall switch, current sensor, authorized distributor, Novosns',
 };
-
-const products = [
-  {
-    name: 'MT92XX High-Voltage Hall Switch',
-    description: 'AEC-Q100 certified, wide voltage range (3.8V-60V), 200KHz sampling for automotive.',
-    image: 'https://aka.doubaocdn.com/s/28sP1w3qQb',
-    features: ['3.8-60V', '200KHz', '-40~150°C', 'AEC-Q100'],
-    datasheet: '#',
-  },
-  {
-    name: 'MT9522 Current Sensor IC',
-    description: '4800Vrms isolation, 250KHz bandwidth, overcurrent protection.',
-    image: 'https://aka.doubaocdn.com/s/zNV81w3qQS',
-    features: ['±20-80A', '4800Vrms', '250KHz', 'Built-in OCP'],
-    datasheet: '#',
-  },
-  {
-    name: 'MT86XX Micro-Power Hall Switch',
-    description: 'Ultra-low power 1.7µA for battery-powered IoT devices.',
-    image: 'https://aka.doubaocdn.com/s/InMi1w3qQb',
-    features: ['1.7µA', '1.6-5.5V', '-40~125°C', 'IoT Ready'],
-    datasheet: '#',
-  },
-  {
-    name: 'MT9532 High-Speed Current Sensor',
-    description: '1MHz bandwidth, <1µs response for industrial systems.',
-    image: 'https://aka.doubaocdn.com/s/tXc31w3qQS',
-    features: ['1MHz', '<1µs', '4800Vrms', '±20-80A'],
-    datasheet: '#',
-  },
-];
 
 const features = [
   {
@@ -94,9 +61,6 @@ export default function Home() {
             </div>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#products" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
-              Products
-            </Link>
             <Link href="/applications" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
               Applications
             </Link>
@@ -137,13 +101,13 @@ export default function Home() {
               <span className="text-blue-400">Magnetic Sensor ICs</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Hall switches, current sensors, and magnetic ICs from leading Chinese semiconductor brands.
+              Hall sensors, AMR/TMR sensors, angle encoders, and current sensors from Novosns.
               100% genuine components with full traceability.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                <Link href="#products">
-                  Browse Products
+                <Link href="/applications">
+                  View Applications
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -195,67 +159,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section id="products" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Featured Products</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              High-performance Hall switches and current sensors for automotive, industrial, and IoT applications
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => (
-              <Card key={index} className="overflow-hidden border border-slate-200 hover:shadow-lg transition-shadow group">
-                <div className="relative h-40 bg-slate-50 flex items-center justify-center">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardContent className="p-5">
-                  <h3 className="font-semibold text-base mb-2 text-slate-900">{product.name}</h3>
-                  <p className="text-sm text-slate-600 mb-3 line-clamp-2">{product.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {product.features.map((feature, i) => (
-                      <span key={i} className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-slate-100 text-slate-700">
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex gap-2 pt-3 border-t border-slate-100">
-                    <Button variant="outline" size="sm" className="flex-1 text-slate-700 border-slate-300" asChild>
-                      <a href={product.datasheet}>
-                        <FileText className="h-3.5 w-3.5 mr-1" />
-                        Datasheet
-                      </a>
-                    </Button>
-                    <Button size="sm" className="flex-1 bg-slate-900 hover:bg-slate-800 text-white" asChild>
-                      <a href={`mailto:autumn@synjet-electronics.com?subject=Quote: ${product.name}`}>
-                        <MessageSquare className="h-3.5 w-3.5 mr-1" />
-                        Quote
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Button variant="outline" size="lg" className="border-slate-300 text-slate-700" asChild>
-              <Link href="/products">
-                View All Products
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Applications Section */}
-      <section id="applications" className="py-20 bg-slate-50">
+      <section id="applications" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Application Scenarios</h2>
@@ -360,19 +265,18 @@ export default function Home() {
               Official authorized distributor for leading Chinese semiconductor manufacturers
             </p>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
-            {[...Array(18)].map((_, index) => (
-              <div 
-                key={index} 
-                className="bg-white rounded-lg p-4 flex items-center justify-center min-h-[80px] hover:bg-slate-50 transition-colors"
-              >
-                <img
-                  src={`/brands/brand_${index + 1}.jpg`}
-                  alt={`Brand ${index + 1}`}
-                  className="max-h-12 w-auto object-contain"
-                />
+          <div className="flex justify-center">
+            <div className="bg-white rounded-xl p-8 flex items-center justify-center min-h-[120px] w-full max-w-md hover:bg-slate-50 transition-colors">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-slate-900">Novosns</h3>
+                <p className="text-slate-500 text-sm mt-1">纳芯微电子 - 磁传感器专家</p>
               </div>
-            ))}
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <p className="text-slate-400 text-sm">
+              More brands coming soon. Contact us for other semiconductor products.
+            </p>
           </div>
         </div>
       </section>
@@ -393,10 +297,9 @@ export default function Home() {
             <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
               <p>
                 SynJet Electronics specialize in high-quality Chinese-brand magnetic sensor ICs 
-                (Hall switches and current sensors) from leading names like Novosense (covering 
-                the original Magntek series). Engineered for automotive, industrial, and IoT 
-                applications, our products deliver precision and reliability comparable to global 
-                standards—giving you a competitive edge.
+                (Hall sensors, AMR/TMR sensors, angle encoders, and current sensors) from leading names like Novosns. 
+                Engineered for automotive, industrial, and IoT applications, our products deliver precision and 
+                reliability comparable to global standards—giving you a competitive edge.
               </p>
               <p>
                 Beyond sensors, we operate as a comprehensive one-stop service provider, leveraging 
@@ -447,7 +350,7 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
-          <Card className="border border-slate-200">
+          <Card className="border border-slate-200 max-w-2xl mx-auto">
             <CardContent className="p-8">
               <form className="grid grid-cols-1 md:grid-cols-2 gap-6" action="mailto:autumn@synjet-electronics.com" method="post" encType="text/plain">
                 <div>
@@ -502,42 +405,22 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
+      <footer className="border-t border-slate-200 py-8 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-3 mb-4">
-                <Image
-                  src="https://code.coze.cn/api/sandbox/coze_coding/file/proxy?expire_time=-1&file_path=assets%2Fgenerate_image_74113d01-5272-48a3-9d33-712a62776867.webp&nonce=9489a992-416b-43b8-b432-e6a26d688d6a&project_id=7616738217844523059&sign=e664257a51264f4c7bd6335337e289af330a9fe5208fdd0e090fc067e2fa11b5"
-                  alt="SynJet Logo"
-                  width={32}
-                  height={32}
-                  className="h-8 w-8"
-                />
-                <span className="text-lg font-bold">SynJet Electronics</span>
-              </div>
-              <p className="text-slate-400 text-sm max-w-md">
-                Authorized distributor of genuine magnetic sensor ICs from leading Chinese semiconductor manufacturers.
-              </p>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center space-x-3">
+              <Image
+                src="/logo.webp"
+                alt="SynJet Logo"
+                width={28}
+                height={28}
+                className="h-7 w-7"
+              />
+              <span className="text-sm font-medium text-slate-700">SynJet Electronics</span>
             </div>
-            <div>
-              <h4 className="font-semibold mb-4">Products</h4>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li><Link href="/products" className="hover:text-white transition-colors">Hall Switches</Link></li>
-                <li><Link href="/products" className="hover:text-white transition-colors">Current Sensors</Link></li>
-                <li><Link href="/products" className="hover:text-white transition-colors">Magnetic ICs</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li>autumn@synjet-electronics.com</li>
-                <li>Shenzhen, China</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
-            <p>&copy; {new Date().getFullYear()} SynJet Electronics. All rights reserved.</p>
+            <p className="text-sm text-slate-500">
+              © {new Date().getFullYear()} SynJet Electronics. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
